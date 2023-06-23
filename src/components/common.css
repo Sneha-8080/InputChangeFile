@@ -1,0 +1,13 @@
+.main{
+    margin: 20px;
+    padding: 20px;
+    border: solid black 3px;
+    background-color:antiquewhite
+}
+
+.sub{
+    margin: 5px;
+    padding: 10px;
+    border: solid navy 2px;
+    background-color: coral;
+}
