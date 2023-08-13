@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Button, Grid, TextField } from "@mui/material";
+import { StudentItem } from "./StudentItem";
 
 export const StudentList=()=>{
     const [data, setData] = useState([])   // on button click add data
@@ -8,7 +9,8 @@ export const StudentList=()=>{
     const [div, setDiv]= useState("")
 
     const handleAdd=()=>{
-        const student = {}
+        const student = {name, cls, div}    //to display input field data
+        setData([student, ...data])
     }
 
 
@@ -31,6 +33,11 @@ export const StudentList=()=>{
              <Grid item xs={2}>
                 <Button variant="contained" onClick={handleAdd} fullWidth>Add</Button>
              </Grid>
+
+             {
+               data.length>0 && data.map((item)=> <StudentItem item={item}/>)
+             }
+
           </Grid>
         </div>
     )

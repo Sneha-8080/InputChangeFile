@@ -4,6 +4,13 @@ import { Continents } from "./Continents"
 import { Dish } from "./Dish"
 import { Fruit } from "./Fruit"
 import { StudentList } from "./StudentList"
+import { UseMemoHook } from "./UseMemoHook"
+import { UseCallbackHook } from "./UseCallbackHook"
+import { UseRefHook } from "./UseRefHook"
+import { Todo } from "./Todo"
+import { Comp1 } from "./useContext/Comp1"
+import { UseReducerHook } from "./UseReducerHook"
+
 import "./common.css"
 
 export const Home = () =>{
@@ -15,6 +22,12 @@ export const Home = () =>{
             <Dish/>
             <Fruit/>
             <StudentList/>
+            <UseMemoHook/>
+            <UseCallbackHook/>
+            <UseRefHook/>
+            <Todo/>
+            <Comp1/>
+            <UseReducerHook/>
         </div>
     )
 }
